@@ -1,0 +1,43 @@
+@font-face {
+    font-family: eurostile;
+    src: url(/assets/Eurostile-Reg.otf) format("opentype");
+}
+
+$border-type: 1px solid lightgray;
+
+.form-box {
+    display: flex;
+    min-width: 400px;
+    min-height: 400px;
+    width: 30vw;
+    height: 50vh;
+    
+    justify-content: center;
+    align-items: center;
+    border: $border-type;
+    border-radius: 5px;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.login-form {
+    padding-top: 10px;
+}
+
+.login-form h2 {
+    padding-bottom: 15px;
+    font-family: eurostile, sans-serif;
+}
+
+:placeholder-shown{
+    font-family: eurostile, sans-serif;
+}
+
+button{
+    font-family: eurostile, sans-serif;
+}

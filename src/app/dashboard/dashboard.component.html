@@ -1,0 +1,45 @@
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Dashboard</span>
+    <a class="navbar-brand" href="#">Logout</a>
+</nav>
+<div class="row">
+    <h2>Overview</h2>
+</div>
+<div class="row">
+        <div class="col-5 ">
+            <div class="box">
+                <h3>Doughnut Bar </h3>
+                <div [hidden]="!chartDonut">
+                    <canvas id="canvas">{{ chartDonut }}</canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-5 ">
+            <div class="box">
+                <h3>Bar Chart</h3>
+                <div [hidden]="!chartBar">
+                    <canvas id="bass">{{ chartBar }}</canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="row">
+    <div class="col-12">
+        <div class="box">
+            <h3>User List</h3>
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                </tr>
+                <tr *ngFor = "let name of table">
+                    <td>{{ name.firstName }}</td>
+                    <td>{{ name.lastName }}</td>
+                    <td>{{ name.username }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

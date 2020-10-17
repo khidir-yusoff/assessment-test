@@ -1,0 +1,40 @@
+@font-face {
+    font-family: eurostile;
+    src: url(/assets/Eurostile-Reg.otf) format("opentype");
+}
+
+$border-type: 1px solid lightgray;
+
+.row {
+    margin: 30px;
+}
+
+.box {
+    justify-content: center;
+    align-items: center;
+    border: $border-type;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+h2 {
+    font-weight: bold;
+    font-family: eurostile, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    font-family: eurostile, sans-serif;
+}
+
+table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table, tr, td, th {
+    text-align: center;
+    border: $border-type;
+    padding: 5px;
+}
+
